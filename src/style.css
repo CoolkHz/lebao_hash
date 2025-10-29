@@ -1,0 +1,92 @@
+/* 全局样式 - 用于覆盖或增强组件样式 */
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* 选择文本颜色 */
+::selection {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* 链接样式 */
+a {
+  color: #2196F3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1976D2;
+}
+
+/* 代码块样式 */
+code {
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* 按钮通用样式重置 */
+button {
+  font-family: inherit;
+}
+
+button:focus {
+  outline: 2px solid #2196F3;
+  outline-offset: 2px;
+}
+
+/* 输入框通用样式 */
+input[type="file"] {
+  font-family: inherit;
+}
+
+/* 工具提示样式 */
+[title] {
+  cursor: help;
+}
+
+/* 无障碍辅助 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* 打印样式 */
+@media print {
+  .app-header,
+  .app-footer {
+    display: none;
+  }
+
+  .result-card {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+}
