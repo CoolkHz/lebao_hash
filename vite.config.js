@@ -7,7 +7,7 @@ export default defineConfig({
   // GitHub Pages 部署时使用仓库名作为 base，本地开发使用 ./
   // 如果仓库名是 hash，则 base 为 '/hash/'
   // 部署时请根据实际仓库名修改
-  base: process.env.NODE_ENV === 'production' ? '/hash/' : './',
+  base: process.env.NODE_ENV === 'production' ? '/lebao_hash/' : './',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
